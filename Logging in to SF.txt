@@ -1,0 +1,5 @@
+svc = tPartnesNS.PythonClient()  # instantiate the object
+svc.serverUrl = 'https://www.blah.my.salesforce.com'
+svc.login('username@email.com', 'password')  # login using your sf credentials
+query_result = service.query("SELECT Id, Name FROM Account")
+records = query_result['records']  # dictionary of results!
